@@ -1,0 +1,19 @@
+﻿{% include "Mail_Header" %}
+<p>{{ Description }}</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in Items %}
+    <tr>
+      <td>{{ item.Title }}</td>
+      <td>{{ item.Description }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
